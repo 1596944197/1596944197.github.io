@@ -6,521 +6,791 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LuffyZh Resume</title>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
     <script
       src="https://kit.fontawesome.com/2828f7885a.js"
       integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" type="image/png" href="./img/favicon.png" />
   </head>
 
   <body>
     <!-- Begin Preloader -->
-    <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="img/preloader.gif" alt="" />
-      </div>
+    <div class="loading-page" id="loading_page">
+      <img class="loading-img" src="./img/truck.gif" />
+      <h2>正在努力加载简历<span class="text-loading"></span></h2>
     </div>
     <!-- End Preloader-->
     <!-- Begin Scroll Up Button -->
-
-    <form action="#home">
-      <button id="toTop" title="Go to top">
-        <i class="fas fa-angle-up"></i>
-      </button>
-    </form>
-    <!-- End Scroll Up Button -->
-
-    <!-- Begin Header -->
-    <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-large">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#home">
-                  Home
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#about-me">
-                  About Me
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#services">
-                  Services
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#skills">
-                  Skills
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#my-work">
-                  My Work
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#contact">
-                  Contact
-                </a>
+    <section id="main">
+      <form action="#home">
+        <button id="toTop" title="Go to top">
+          <i class="fas fa-angle-up"></i>
+        </button>
+      </form>
+      <!-- End Scroll Up Button -->
+  
+      <!-- Begin Header -->
+      <div class="header-wrapper" id="home">
+        <!-- Begin Hero -->
+        <section class="hero is-large">
+          <!-- Begin Mobile Nav -->
+          <nav class="navbar is-transparent is-hidden-desktop">
+            <!-- Begin Burger Menu -->
+            <div class="navbar-brand">
+              <div class="navbar-burger burger" data-target="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
+            <!-- End Burger Menu -->
+            <div id="mobile-nav" class="navbar-menu">
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <a class="navbar-item" href="#home">
+                    Home
+                  </a>
+                </div>
+                <div class="navbar-item">
+                  <a class="navbar-item" href="#experience">
+                    Experience
+                  </a>
+                </div>
+                <div class="navbar-item">
+                  <a class="navbar-item" href="#services">
+                    Services
+                  </a>
+                </div>
+                <div class="navbar-item">
+                  <a class="navbar-item" href="#skills">
+                    Skills
+                  </a>
+                </div>
+                <div class="navbar-item">
+                  <a class="navbar-item" href="#my-work">
+                    My Work
+                  </a>
+                </div>
+                <div class="navbar-item">
+                  <a class="navbar-item" href="#contact">
+                    Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- End Mobile Nav -->
+          <!-- Begin Hero Content-->
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <h1 class="subtitle">恭喜你成功解锁一个有趣的灵魂～</h1>
+              <h2 class="title">周德友</h2>
+            </div>
           </div>
-        </nav>
-        <!-- End Mobile Nav -->
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="subtitle">Hey there, I'm</h1>
-            <h2 class="title">Ashley</h2>
-            <h1 class="subtitle profession">A UI/UX Designer</h1>
+          <!-- End Hero Content-->
+          <!-- Begin Hero Menu -->
+          <div class="hero-foot ">
+            <div class="hero-foot--wrapper">
+              <div class="columns">
+                <div class="column is-12 hero-menu-desktop has-text-centered">
+                  <ul>
+                    <li class="is-active">
+                      <a href="#home">Home</a>
+                    </li>
+                    <li>
+                      <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                      <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                      <a href="#my-work">My Work</a>
+                    </li>
+                    <li>
+                      <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                      <a href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Hero Menu -->
+        </section>
+        <!-- End Hero -->
+      </div>
+      <!-- End Header -->
+  
+      <!-- Begin Main Content -->
+      <div class="main-content">
+        <!-- Begin About Me Section -->
+        <div class="section-light about-me" id="experience">
+          <div class="container">
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">教育&&工作经历</h1>
+            </div>
+            <div class="timeline"> 
+              <div class="timeline__event animated fadeInUp delay-3s timeline__event--type1">
+                <div class="timeline__event__icon ">
+                  <span class="icon">
+                    <i class="fas fa-home"></i>
+                  </span>
+                </div>
+                <div class="timeline__event__date">
+                  2011 ~ 2015
+                </div>
+                <div class="timeline__event__content ">
+                  <div class="timeline__event__title">
+                    吉林大学
+                  </div>
+                  <div class="timeline__event__subtitle">
+                    计算机科学与技术学院
+                  </div>
+                  <div class="timeline__event__description">
+                    <ul>
+                      <li>2015 年加入中国共产党</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                <div class="timeline__event__icon">
+                  <span class="icon">
+                    <i class="fas fa-city"></i>
+                  </span>
+                </div>
+                <div class="timeline__event__date">
+                  2015 ~ 2018
+                </div>
+                <div class="timeline__event__content">
+                  <div class="timeline__event__title">
+                    北京邮电大学
+                  </div>
+                  <div class="timeline__event__subtitle">
+                    物联网技术
+                  </div>
+                  <div class="timeline__event__description">
+                    <ul>
+                      <li>负责百度地图北京 T3 航站楼室内地图绘制工作</li>
+                      <li>负责中国科技馆室内导览项目前端工作</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                <div class="timeline__event__icon">
+                  <span class="icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                  </span>
+                </div>
+                <div class="timeline__event__date">
+                  2018 ~ 2020
+                </div>
+                <div class="timeline__event__content">
+                  <div class="timeline__event__title">
+                    网易有道（北京）信息科技有限公司
+                  </div>
+                  <div class="timeline__event__subtitle">
+                    增长广告组 - 前端开发工程师
+                  </div>
+                  <div class="timeline__event__description">
+                    <ul>
+                      <li>负责有道广告组前端业务相关架构搭建、需求开发以及新模式探索</li>
+                      <li>有道广告组前端 Work Flow 设计以及前端业务逻辑的封装</li>
+                      <li>有道广告组前端项目监控的实现与总结</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__event animated fadeInUp timeline__event--type4">
+                <div class="timeline__event__icon">
+                  <span class="icon">
+                    <i class="fas fa-flag-checkered"></i>
+                  </span>
+                </div>
+                <div class="timeline__event__date">
+                  2020 ～ 2021
+                </div>
+                <div class="timeline__event__content">
+                  <div class="timeline__event__title">
+                    快手科技（北京）信息科技有限公司
+                  </div>
+                  <div class="timeline__event__subtitle">
+                    电商事业部 - 高级前端开发工程师
+                  </div>
+                  <div class="timeline__event__description">
+                    <ul>
+                      <li>负责快手电商 C 端主交易链路商详页的所有需求开发迭代以及稳定性搭建</li>
+                      <li>前端项目上线流程以及工程 code review 规范的制定</li>
+                      <li>快手电商商详页、电商小程序、商详页主题换肤、商详页 UI 自动化测试</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__event animated fadeInUp delay-1s timeline__event--type5">
+                <div class="timeline__event__icon">
+                  <span class="icon">
+                    <i class="fas fa-train"></i>
+                  </span>
+                </div>
+                <div class="timeline__event__date">
+                  2021 ~ 至今
+                </div>
+                <div class="timeline__event__content">
+                  <div class="timeline__event__title">
+                    网易云音乐（杭州）信息科技有限公司
+                  </div>
+                  <div class="timeline__event__subtitle">
+                    大前端技术部 - 资深前端开发工程师
+                  </div>
+                  <div class="timeline__event__description">
+                    <ul>
+                      <li>负责网易云音乐低代码平台 Tango Studio 整体架构设计与迭代</li>
+                      <li>参与并维护网易云音乐低代码引擎 Tango 相关内容开发</li>
+                      <li>开发并维护网易云音乐内部 Drawio 系统</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- End About Me Content -->
+        <!-- Begin Skills Content -->
+        <div class="section-light skills" id="skills">
+          <div class="container">
+            <div class="columns is-multiline">
+              <div class="column is-12 about-me">
+                <h1 class="title has-text-centered section-title">Skills</h1>
+              </div>
+              <div
+                class="column is-6"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <h1>React.js</h1>
+                <progress class="progress is-success" value="70" max="100">70%</progress>
+                <h1>Vue.js</h1>
+                <progress class="progress is-primary" value="50" max="100">50%</progress>
+                <h1>Node.js</h1>
+                <progress class="progress is-primary" value="50" max="100">50%</progress>
+                <h1>TypeScript</h1>
+                <progress class="progress is-success" value="60" max="100">60%</progress>
+              </div>
+              <div
+                class="column is-6"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <h1>JavaScript</h1>
+                <progress class="progress is-success" value="70" max="100">70%</progress>
+                <h1>HTML</h1>
+                <progress class="progress is-success" value="80" max="100">80%</progress>
+                <h1>CSS</h1>
+                <progress class="progress is-primary" value="60" max="100">65%</progress>
+                <h1>CET-6</h1>
+                <progress class="progress is-primary" value="60" max="100">50%</progress>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#about-me">About Me</a>
-                  </li>
-                  <li>
-                    <a href="#services">Services</a>
-                  </li>
-                  <li>
-                    <a href="#skills">Skills</a>
-                  </li>
-                  <li>
-                    <a href="#my-work">My Work</a>
-                  </li>
-                  <li>
-                    <a href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Hero Menu -->
-      </section>
-      <!-- End Hero -->
-    </div>
-    <!-- End Header -->
-
-    <!-- Begin Main Content -->
-    <div class="main-content">
-      <!-- Begin About Me Section -->
-      <div class="section-light about-me" id="about-me">
-        <div class="container">
-          <div class="column is-12 about-me">
-            <h1 class="title has-text-centered section-title">About Me</h1>
-          </div>
-          <div class="columns is-multiline">
+        <!-- End Skills Content -->
+        <!-- Begin Work Content -->
+        <div class="section-dark my-work" id="my-work">
+          <div class="container">
             <div
-              class="column is-6 has-vertically-aligned-content"
-              data-aos="fade-right"
+              class="columns is-multiline"
+              data-aos="fade-in"
+              data-aos-easing="linear"
             >
-              <p class="is-larger">
-                &emsp;&emsp;<strong
-                  >Showcase is a modern, beautiful personal website template to
-                  showcase who you are, as well as projects you've worked on in
-                  the past.</strong
+              <div class="column is-12">
+                <h1 class="title has-text-centered section-title">工作项目</h1>
+              </div>
+              <div class="column is-4 project">
+                <a href="#" class="js-modal-trigger" data-target="modal-tango">
+                  <figure
+                    class="image is-5by3 work-item"
+                    style="background-image: url('./img/tango-home.jpg');"
+                  ></figure>
+                </a>
+                <h2>云音乐低代码研发平台</h2>
+              </div>
+              <div class="column is-4 project">
+                <a href="#" class="js-modal-trigger" data-target="modal-kuaishou">
+                  <figure
+                    class="image is-5by3 work-item"
+                    style="background-image: url('./img/kuaishou.jpg');"
+                  ></figure>
+                </a>
+                <h2>快手电商H5主交易商详页</h2>
+              </div>
+              <div class="column is-4 project">
+                <a href="#" class="js-modal-trigger" data-target="modal-youdao">
+                  <figure
+                    class="image is-5by3 work-item"
+                    style="background-image: url('./img/youdao_ke.jpg');"
+                  ></figure>
+                </a>
+                <h2>网易有道转介绍广告平台</h2>
+              </div>
+              <div class="column is-4 project">
+                <a href="#" class="js-modal-trigger" data-target="modal-drawio">
+                  <figure
+                    class="image is-5by3 work-item"
+                    style="background-image: url('https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bd2466e8fdaf4f259ec0a86dfdd67ccc~tplv-k3u1fbpfcp-zoom-crop-mark:3024:3024:3024:1702.awebp?');"
+                  ></figure>
+                </a>
+                <h2>Simple Drawio Starter</h2>
+              </div>
+              <div class="column is-4 project" stye="background-color: #fff">
+                <a href="#" class="js-modal-trigger" data-target="modal-download">
+                  <figure
+                    class="image is-5by3 work-item"
+                    style="background-image: url('./img/download.gif');"
+                  ></figure>
+                </a>
+                <h2>Frontend Download Sample</h2>
+              </div>
+              <div class="column is-4 project">
+                <a href="#" class="js-modal-trigger" data-target="modal-theme">
+                  <figure
+                    class="image is-5by3 work-item"
+                    style="background-image: url('./img/change-theme.webp');"
+                  ></figure>
+                </a>
+                <h2>Dynamic Antd Theme</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Work Content -->
+        <!-- Begin Services Content -->
+        <div class="section-color services" id="about-me">
+          <div class="container">
+            <div class="columns is-multiline">
+              <div
+                class="column is-12 about-me"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <h1 class="title has-text-centered section-title">More About Me</h1>
+              </div>
+              <div class="columns is-12" style="width: 100%">
+                <div
+                  class="column is-4 has-text-centered"
+                  data-aos="fade-in"
+                  data-aos-easing="linear"
                 >
-              </p>
-              <br />
-              <p>
-                Showcase was built from the ground up with Bulma to be fast and
-                responsive out of the box with all source files well documented
-                for easy to customization. The Showcase template gives you a
-                personal space to share what you are all about as a creative
-                designer, developer, photographer, and more!
-              </p>
-              <br />
-              <div class="is-divider"></div>
-              <div class="columns about-links">
-                <div class="column">
-                  <p class="heading">
-                    <strong>Give me a ring</strong>
-                  </p>
-                  <p class="subheading">
-                    123-456-7890
-                  </p>
+                  <div class="is-flex flex-center">
+                    <i class="fad fa-book fa-3x"></i>
+                    <h1>喜欢分享</h1>
+                  </div>
+                  <hr />
+                  <ul class="about-me-ul">
+                    <li>网易有道：《Next.js 最佳实践》和《广告前端统一监控》</li>
+                    <li>快手电商：《商详页骨架屏优化》和《商详页主题换肤》</li>
+                    <li>云音乐：《DrawIO 二开》和《低代码平台建设实践》</li>
+                  </ul>
                 </div>
-                <div class="column">
-                  <p class="heading">
-                    <strong>Email Me</strong>
-                  </p>
-                  <p class="subheading">
-                    hello@example.com
-                  </p>
+                <div
+                  class="column is-4 has-text-centered"
+                  data-aos="fade-in"
+                  data-aos-easing="linear"
+                >
+                  <div class="is-flex flex-center juejin-writing">
+                    <i class="fas fa-paint-brush fa-3x"></i>
+                    <h1>热爱写作</h1>
+                  </div>
+                  <hr />
+                  <ul class="about-me-ul">
+                    <li>掘金 2021 年度人气作者 No.31</li>
+                    <li>掘金 2022 年度人气作者 No.24</li>
+                    <li>掘金 2023 年度人气作者期待中</li>
+                  </ul>
                 </div>
-                <div class="column">
-                  <p class="heading">
-                    <strong>View my portfolio</strong>
-                  </p>
-                  <p class="subheading">
-                    example.com
-                  </p>
+                <div
+                  class="column is-4 has-text-centered"
+                  data-aos="fade-in"
+                  data-aos-easing="linear"
+                >
+                  <div class="is-flex flex-center">
+                    <i class="fas fa-rocket fa-3x"></i>
+                    <h1>其他相关</h1>
+                  </div>
+                  <hr />
+                  <ul class="about-me-ul">
+                    <li>网易有道 2018 年度《最佳新人》</li>
+                    <li>北京邮电大学研究生一等奖学金</li>
+                    <li>吉林大学计算机科学与技术学院学生会部长</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="column is-6 right-image " data-aos="fade-left">
-              <img
-                class="is-rounded"
-                src="https://picsum.photos/id/366/600/375"
-                alt=""
-              />
-            </div>
           </div>
         </div>
-      </div>
-      <!-- End About Me Content -->
-      <div class="section-dark resume">
-        <div class="container">
-          <div
-            class="columns is-multiline"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">
-                View My Resume
-              </h1>
-            </div>
-            <div class="column is-10 has-text-centered is-offset-1">
-              <h2 class="subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et doloremagna aliqua
-              </h2>
-              <form action="example.docs">
-                <button class="button">
-                  Download Resume&emsp;<i class="fad fa-download fa-lg"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Begin Services Content -->
-      <div class="section-color services" id="services">
-        <div class="container">
-          <div class="columns is-multiline">
+        <!-- End Services Content -->
+        <!-- Begin Resume -->
+        <div class="section-dark resume">
+          <div class="container">
             <div
-              class="column is-12 about-me"
+              class="columns is-multiline"
               data-aos="fade-in"
               data-aos-easing="linear"
             >
-              <h1 class="title has-text-centered section-title">Services</h1>
-
-              <h2 class="subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </h2>
-              <br />
-            </div>
-            <div class="columns is-12">
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <i class="fad fa-meteor fa-3x"></i>
-                <hr />
-                <h2>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                </h2>
+              <div class="column is-12 about-me">
+                <h1 class="title has-text-centered section-title">
+                  查看简历
+                </h1>
               </div>
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <i class="fas fa-paint-brush fa-3x"></i>
-                <hr />
-                <h2>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              <div class="column is-10 has-text-centered is-offset-1">
+                <h2 class="subtitle">
+                  有关工作内容相关，更详细的内容，点击下方按钮下载简历即可～
                 </h2>
-              </div>
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <i class="fas fa-rocket fa-3x"></i>
-                <hr />
-                <h2>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                </h2>
-              </div>
-            </div>
-            <hr />
-            <div class="columns is-12">
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <i class="fas fa-upload fa-3x"></i>
-                <hr />
-                <h2>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                </h2>
-              </div>
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <i class="fas fa-bus fa-3x"></i>
-                <hr />
-                <h2>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                </h2>
-              </div>
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <i class="fas fa-code fa-3x"></i>
-                <hr />
-                <h2>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                </h2>
+                <form>
+                  <a class="button" href="./img/resume.pdf" download>
+                    下载简历&emsp;<i class="fad fa-download fa-lg"></i>
+                  </a>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End Services Content -->
-      <!-- Begin Skills Content -->
-      <div class="section-light skills" id="skills">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">Skills</h1>
-            </div>
+        <!-- End Resume -->
+        <!-- Begin Contact Content -->
+        <div class="section-light contact" id="contact">
+          <div class="container">
             <div
-              class="column is-6"
-              data-aos="fade-in"
+              class="columns is-multiline"
+              data-aos="fade-in-up"
               data-aos-easing="linear"
             >
-              <h1>Adobe Experience Design</h1>
-              <progress class="progress" value="70" max="100">30%</progress>
-              <h1>Adobe After Effects</h1>
-              <progress class="progress" value="65" max="100">30%</progress>
-              <h1>Visual Studio Code</h1>
-              <progress class="progress" value="58" max="100">45%</progress>
-              <h1>Sketch</h1>
-              <progress class="progress" value="90" max="100">60%</progress>
-            </div>
-            <div
-              class="column is-6"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <h1>HTML</h1>
-              <progress class="progress" value="85" max="100">30%</progress>
-              <h1>CSS</h1>
-              <progress class="progress" value="95" max="100">30%</progress>
-              <h1>VueJS</h1>
-              <progress class="progress" value="70" max="100">45%</progress>
-              <h1>React</h1>
-              <progress class="progress" value="60" max="100">60%</progress>
+              <div class="column is-12 about-me">
+                <h1 class="title has-text-centered section-title">
+                  联系我
+                </h1>
+              </div>
+              <div class="column is-8 is-offset-2">
+                <div>
+                  <div class="mt-10">
+                    <label class="label">昵称</label>
+                    <div class="has-icons-left">
+                      <input
+                        class="input"
+                        type="text"
+                        placeholder="Ex. Jane Smith"
+                        name="Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-10">
+                    <label class="label">邮箱</label>
+                    <div class="has-icons-left">
+                      <input
+                        class="input"
+                        type="email"
+                        placeholder="Ex. hello@arctheme.com"
+                        name="Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-10">
+                    <label class="label">联系内容</label>
+                    <div>
+                      <textarea
+                        class="textarea"
+                        placeholder="Textarea"
+                        name="Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="mt-10">
+                    <div>
+                      <button class="button submit-button">
+                        提交&nbsp;&nbsp;
+                        <i class="fas fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- End Contact Content -->
       </div>
-      <!-- End Skills Content -->
-      <!-- Begin Work Content -->
-      <div class="section-dark my-work" id="my-work">
-        <div class="container">
-          <div
-            class="columns is-multiline"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <div class="column is-12">
-              <h1 class="title has-text-centered section-title">My Work</h1>
+      <!-- End Main Content -->
+      <!-- Begin Footer -->
+      <div class="footer">
+        <p>
+          <strong class="white">Website</strong> by <a href="https://github.com/luffyZh"><i class="fab fa-github-alt"></i>&nbsp;LuffyZh</a>.
+          The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+      <!-- End Footer -->
+      <!-- Modal Start-->
+      <div class="modal" id="modal-tango">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <article class="panel is-info">
+            <p class="panel-heading">
+              Tango Studio — 网易云音乐低代码研发平台
+            </p>
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-5by3">
+                  <img src="https://p6.music.126.net/obj/wo3DlcOGw6DClTvDisK1/23862141492/215c/21eb/8791/15266ab08f673a78685a940effc4921c.gif" alt="Tango Mode">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content is-column">
+                  <div class="row">
+                    <label class="info">项目简介</label>
+                    网易云音乐低代码研发赋能平台，目标用户：所有研发线人员。
+                  </div>
+                  <div class="row">
+                    <label class="info">技术相关</label>
+                    Nodejs + Mysql + Reactjs + Typescript
+                  </div>
+                  <div class="row">
+                    <label class="info">主要角色</label>
+                    低代码研发平台研发负责人
+                  </div>
+                  <div class="row">
+                    <label class="info">工作贡献</label>
+                    <ul>
+                      <li>低代码在线开发免登通用方案设计与实现</li>
+                      <li>低代码研发平台架构选型、前后端接口开发以及数据库设计等工作</li>
+                      <li>低代码引擎相关功能编写（在线生产样板间、区块、数据源）</li>
+                      <li>低代码在线开发免登通用方案设计与实现</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=0');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=10');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=20');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=30');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=40');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=50');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=60');"
-                ></figure>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=70');"
-                ></figure>
-              </a>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
-      <!-- End Work Content -->
-      <!-- Begin Contact Content -->
-      <div class="section-light contact" id="contact">
-        <div class="container">
-          <div
-            class="columns is-multiline"
-            data-aos="fade-in-up"
-            data-aos-easing="linear"
-          >
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">
-                Get in touch
-              </h1>
+      <div class="modal" id="modal-kuaishou">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <article class="panel is-orange">
+            <p class="panel-heading">
+              快手电商主交易链路商品详情页
+            </p>
+            <div class="card">
+              <div class="card-image" style="text-align: center;">
+                <video
+                  id="kuaishoou-video"
+                  class="video-js"
+                  controls
+                  preload="auto"
+                  width="720px"
+                  height="400"
+                  poster="./img/kuaishou-poster.jpeg"
+                  data-setup="{}"
+                >
+                  <source src="./img/kuaishou.mp4" type="video/mp4" />
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank"
+                      >supports HTML5 video</a
+                    >
+                  </p>
+                </video>
+              </div>
+              <div class="card-content">
+                <div class="content is-column">
+                  <div class="row">
+                    <label class="info">项目简介</label>
+                    快手电商商详页面，使用 Vue.js 构建 Hybrid App，通过 JSBridge 与客户端进行通信。
+                  </div>
+                  <div class="row">
+                    <label class="info">技术相关</label>
+                    Vue.js + Axios + Typescript + Hybrid
+                  </div>
+                  <div class="row">
+                    <label class="info">主要角色</label>
+                    商详页负责人，参与商详页全部需求的迭代开发以及商详页相关技术需求的设计与推进。
+                  </div>
+                  <div class="row">
+                    <label class="info">工作贡献</label>
+                    <ul>
+                      <li>接手期间快手电商商详页从未 Block 主交易链路且无 P3 以及以上 Bug</li>
+                      <li>快手电商前端 UI 自动化测试方案设计与实现</li>
+                      <li>商详页骨架屏优化、商详页主题换肤以及图片失败重试方案机制设计与实现</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="column is-8 is-offset-2">
-              <form
-                action="https://formspree.io/email@example.com"
-                method="POST"
-              >
-                <div class="field">
-                  <label class="label">Name</label>
-                  <div class="control has-icons-left">
-                    <input
-                      class="input"
-                      type="text"
-                      placeholder="Ex. Jane Smith"
-                      name="Name"
-                    />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-user"></i>
-                    </span>
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label">Email</label>
-                  <div class="control has-icons-left">
-                    <input
-                      class="input"
-                      type="email"
-                      placeholder="Ex. hello@arctheme.com"
-                      name="Email"
-                    />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label">Message</label>
-                  <div class="control">
-                    <textarea
-                      class="textarea"
-                      placeholder="Textarea"
-                      name="Message"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="control ">
-                    <button class="button submit-button">
-                      Submit&nbsp;&nbsp;
-                      <i class="fas fa-paper-plane"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
-      <!-- End Contact Content -->
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Begin Footer -->
-    <div class="footer">
-      <p>
-        <strong class="white">Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
-        The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
-        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
-    </div>
-    <!-- End Footer -->
-
+      <div class="modal" id="modal-youdao">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <article class="panel is-danger">
+            <p class="panel-heading">
+              网易有道转介绍广告平台
+            </p>
+            <div class="card" style="overflow: auto;">
+              <div class="card-content" style="padding-top: 0;">
+                <div class="content is-column">
+                  <div class="row">
+                    <label class="warning">项目简介</label>
+                    网易有道转型产品，从投放广告到在线教育线下机构客户获取。
+                  </div>
+                  <div class="row">
+                    <label class="warning">技术相关</label>
+                    Next.js + Redux + Redux-Saga + Fetch + Node + Pm2
+                  </div>
+                  <div class="row">
+                    <label class="warning">主要角色</label>
+                    应用前端负责人
+                  </div>
+                  <div class="row">
+                    <label class="warning">工作贡献</label>
+                    <ul>
+                      <li>前端框架的选型，基础架构搭建</li>
+                      <li>独立搭建 Sentry 前端监控平台，监控项目异常问题</li>
+                      <li>PC 端业务逻辑开发，小程序端指导新人开发</li>
+                      <li>前端无闪现登录授权方案的设计与实现</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-image">
+                  <figure class="image is-5by3">
+                    <img src="./img/landing_page.png" alt="Youdao Landing" style="height: auto; ">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="modal" id="modal-drawio">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <article class="panel is-success">
+            <p class="panel-heading">
+              Simple Drawio Starter
+            </p>
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-5by3">
+                  <img src="./img/simple-drawio-starter.png" alt="Drawio">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content is-column">
+                  <div class="row">
+                    <label class="success">项目简介</label>
+                    开箱即用的 DrawIO 二开脚手架，简单便捷快速搭建 DrawIO 内部系统。
+                  </div>
+                  <div class="row">
+                    <label class="success">项目地址</label>
+                    <a target="_blank" href="https://github.com/luffyZh/simple-drawio-starter/">simple-drawio-starter&nbsp;</a>
+                  </div>
+                  <div class="row">
+                    <label class="success link">演示地址</label>
+                    <a target="_blank" href="https://simple-drawio-starter.vercel.app/">simple-drawio-starter&nbsp;</a>
+                  </div>
+                  <div class="row">
+                    <label class="success link">文章地址</label>
+                    <a target="_blank" href="https://juejin.cn/post/7017686432009420808/">《DrawIO 二开 — 是时候给你的 ProcessOn 充值终身 VIP 了》</a>
+                  </div>
+                  <div class="row">
+                    <label class="success">项目特点</label>
+                    <ul>
+                      <li>技术驱动，从公司痛点问题出发调研解决方案并抽象出通用脚手架</li>
+                      <li>开箱即用，零成本进入 DrawIO 二开阶段</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="modal" id="modal-download">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <article class="panel is-link">
+            <p class="panel-heading">
+              Frontend Download Sample
+            </p>
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-5by3">
+                  <img src="./img/forntend-download-sample.png" alt="Download">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content is-column">
+                  <div class="row">
+                    <label class="success">项目简介</label>
+                    个人整理的前端下载仓库，基本包含所有前端业务能遇到的场景，有较强的实用性。
+                  </div>
+                  <div class="row">
+                    <label class="success link">项目地址</label>
+                    <a target="_blank" href="https://github.com/luffyZh/frontend-download-sample/">frontend-download-sample&nbsp;</a>
+                  </div>
+                  <div class="row">
+                    <label class="success">掘金热文</label>
+                    50000+ 阅读量，1200+ 点赞量
+                  </div>
+                  <div class="row">
+                    <label class="success link">文章地址</label>
+                    <a target="_blank" href="https://juejin.cn/post/6844903763359039501/">《这可能是你见过的最全前端下载总结》</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="modal" id="modal-theme">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <article class="panel is-purple">
+            <p class="panel-heading">
+              Dynamic Antd Theme
+            </p>
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-5by3">
+                  <img src="./img/dynamic-antd-theme.png" alt="Theme">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content is-column">
+                  <div class="row">
+                    <label class="purple">项目简介</label>
+                    <code>ant-design</code> 运行时动态换肤插件，无需配置，即插即用一键换肤～
+                  </div>
+                  <div class="row">
+                    <label class="purple link">项目地址</label>
+                    <a target="_blank" href="https://github.com/luffyZh/dynamic-antd-theme/">dynamic-antd-theme&nbsp;</a>
+                  </div>
+                  <div class="row">
+                    <label class="purple link">演示地址</label>
+                    <a target="_blank" href="https://dynamic-antd-theme.luffyzh.now.sh/">dynamic-antd-theme&nbsp;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- modal End -->
+    </main>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/resume.js"></script>
@@ -532,5 +802,7 @@
         duration: 800,
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
   </body>
 </html>

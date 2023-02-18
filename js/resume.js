@@ -48,10 +48,80 @@ function scrollFunction() {
 
 // Preloader
 $(document).ready(function($) {
-  $(".preloader-wrapper").fadeOut();
+  $('#main').css('display', 'none');
+  $('html').css('overflow', 'hidden');
+  setTimeout(() => {
+    $('#main').css('display', 'block');
+  }, 1000);
+  setTimeout(() => {
+    $("#loading_page").fadeOut();
+    $('html').css('overflow', 'auto');
+  }, 3000);
   $("body").removeClass("preloader-site");
 });
+
 $(window).on("load", function() {
   var Body = $("body");
   Body.addClass("preloader-site");
+});
+
+$('.juejin-writing').on('click', function() {
+  window.open('https://juejin.cn/user/96412752681079');
+});
+
+$('.submit-button').on('click', function() {
+  Swal.fire({
+    title: '<img style="width: 200px; height: 200px" src="../img/zhoudeyou.jpg" />',
+    // icon: 'info',
+    text: '此功能还未开发完成，扫描上方二维码添加我为微信好友～',
+    showCloseButton: true,
+    confirmButtonText: '知道了'
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Functions to open and close a modal
+  function openModal($el) {
+    $('html').css('overflow', 'hidden');
+    $el.classList.add('is-active');
+  }
+
+  function closeModal($el) {
+    $('html').css('overflow', 'auto');
+    $el.classList.remove('is-active');
+  }
+
+  function closeAllModals() {
+    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+      closeModal($modal);
+    });
+  }
+
+  // Add a click event on buttons to open a specific modal
+  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+    const modal = $trigger.dataset.target;
+    const $target = document.getElementById(modal);
+
+    $trigger.addEventListener('click', () => {
+      openModal($target);
+    });
+  });
+
+  // Add a click event on various child elements to close the parent modal
+  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+    const $target = $close.closest('.modal');
+
+    $close.addEventListener('click', () => {
+      closeModal($target);
+    });
+  });
+
+  // Add a keyboard event to close all modals
+  document.addEventListener('keydown', (event) => {
+    const e = event || window.event;
+
+    if (e.keyCode === 27) { // Escape key
+      closeAllModals();
+    }
+  });
 });
