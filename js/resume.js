@@ -1,6 +1,6 @@
 // Get that hamburger menu cookin' //
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll(".navbar-burger"),
@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
     // Add a click event on each of them
-    $navbarBurgers.forEach(function($el) {
-      $el.addEventListener("click", function() {
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener("click", function () {
         // Get the target from the "data-target" attribute
         var target = $el.dataset.target;
         var $target = document.getElementById(target);
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Smooth Anchor Scrolling
-$(document).on("click", 'a[href^="#"]', function(event) {
+$(document).on("click", 'a[href^="#"]', function (event) {
   event.preventDefault();
   $("html, body").animate(
     {
@@ -34,7 +34,7 @@ $(document).on("click", 'a[href^="#"]', function(event) {
 });
 
 // When the user scrolls down 20px from the top of the document, show the scroll up button
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
 };
 
@@ -47,7 +47,7 @@ function scrollFunction() {
 }
 
 // Preloader
-$(document).ready(function($) {
+$(document).ready(function ($) {
   $('#main').css('display', 'none');
   $('html').css('overflow', 'hidden');
   setTimeout(() => {
@@ -56,22 +56,22 @@ $(document).ready(function($) {
   setTimeout(() => {
     $("#loading_page").fadeOut();
     $('html').css('overflow', 'auto');
-  }, 3000);
+  }, 1000);
   $("body").removeClass("preloader-site");
 });
 
-$(window).on("load", function() {
+$(window).on("load", function () {
   var Body = $("body");
   Body.addClass("preloader-site");
 });
 
-$('.juejin-writing').on('click', function() {
+$('.juejin-writing').on('click', function () {
   window.open('https://juejin.cn/user/96412752681079');
 });
 
-$('.submit-button').on('click', function() {
+$('.submit-button').on('click', function () {
   Swal.fire({
-    title: '<img style="width: 200px; height: 200px" src="../img/zhoudeyou.jpg" />',
+    title: '<img style="width: 200px; height: 200px" src="../img/mmqrcode1677205240740.png" />',
     // icon: 'info',
     text: '此功能还未开发完成，扫描上方二维码添加我为微信好友～',
     showCloseButton: true,
